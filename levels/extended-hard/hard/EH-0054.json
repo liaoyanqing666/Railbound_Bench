@@ -1,0 +1,191 @@
+{
+  "schema_version": 1,
+  "level_id": "EH-0054",
+  "board": [
+    [
+      0,
+      0,
+      1,
+      0,
+      31
+    ],
+    [
+      0,
+      1,
+      1,
+      0,
+      2
+    ],
+    [
+      2,
+      0,
+      0,
+      10,
+      8
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      0,
+      0,
+      2,
+      0
+    ]
+  ],
+  "mods": [
+    [
+      0,
+      0,
+      10,
+      0,
+      0
+    ],
+    [
+      0,
+      10,
+      1,
+      0,
+      3
+    ],
+    [
+      1,
+      0,
+      0,
+      7,
+      3
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      0,
+      0,
+      10,
+      0
+    ]
+  ],
+  "mod_nums": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "cars": [
+    {
+      "pos": [
+        1,
+        1
+      ],
+      "direction": "RIGHT",
+      "num": 0,
+      "type": "DECOY"
+    },
+    {
+      "pos": [
+        5,
+        3
+      ],
+      "direction": "UP",
+      "num": 2,
+      "type": "NORMAL"
+    },
+    {
+      "pos": [
+        0,
+        2
+      ],
+      "direction": "RIGHT",
+      "num": 0,
+      "type": "NORMAL"
+    },
+    {
+      "pos": [
+        5,
+        0
+      ],
+      "direction": "UP",
+      "num": 1,
+      "type": "NORMAL"
+    }
+  ],
+  "tracks": 10,
+  "semaphores": 2,
+  "metadata": {
+    "mechanisms": [
+      "junctions",
+      "switches_and_gates",
+      "self_switching_junctions",
+      "semaphores",
+      "decoy_cars"
+    ],
+    "locomotive_count": 1,
+    "total_car_count": 4,
+    "difficulty": "hard",
+    "available_tracks": 10,
+    "available_semaphores": 2,
+    "decoy_car_count": 1
+  }
+}

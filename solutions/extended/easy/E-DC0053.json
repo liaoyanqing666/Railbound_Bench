@@ -1,0 +1,151 @@
+{
+  "add_tracks": [
+    [
+      0,
+      3,
+      5
+    ],
+    [
+      0,
+      4,
+      6
+    ],
+    [
+      1,
+      5,
+      6
+    ],
+    [
+      2,
+      2,
+      6
+    ],
+    [
+      2,
+      5,
+      8
+    ],
+    [
+      3,
+      2,
+      7
+    ],
+    [
+      6,
+      3,
+      7
+    ]
+  ],
+  "metadata": {
+    "simulation_steps": 20,
+    "solver": {
+      "optimization": {
+        "status": "OPTIMAL",
+        "optimality_proven": true,
+        "search_mode": "route_domains",
+        "backend": "native",
+        "minimum_tracks": 7,
+        "tracks_used": 7,
+        "semaphores_used": 0,
+        "lower_bound": 7,
+        "track_budget": 7,
+        "semaphore_budget": 0,
+        "simulation_steps": 20,
+        "reason": "search_exhausted",
+        "infeasibility_scope": "The immutable board, track budget and semaphore budget in this result.",
+        "statistics": {
+          "search_nodes": 5584,
+          "simulations": 2898,
+          "simulation_ticks": 6420,
+          "bound_checks": 5585,
+          "bound_cache_hits": 5148,
+          "pruned_by_bound": 2688,
+          "pruned_by_failure": 400,
+          "rail_decisions": 2456,
+          "rail_refinements": 40,
+          "signal_decisions": 0,
+          "maximum_depth": 8,
+          "incumbent_validations": 1,
+          "unresolved_simulations": 0,
+          "solutions_found": 1,
+          "heuristic_search_nodes": 4188,
+          "heuristic_passes": 3,
+          "checkpoint_resumes": 2892,
+          "reused_prefix_ticks": 27592,
+          "logical_simulation_ticks": 34012,
+          "full_replays": 4,
+          "native_cpu_seconds": 0.046875,
+          "native_backend": true,
+          "incremental_simulation": true,
+          "witness_validations": 1,
+          "elapsed_seconds": 0.6611222999999997,
+          "complete_search": true,
+          "cpu_seconds": 0.046875,
+          "search_exhausted": true,
+          "time_limit_reached": false,
+          "node_limit_reached": false
+        },
+        "incumbent_supplied": true,
+        "limits": {
+          "timeout_seconds": 600,
+          "node_limit": null,
+          "max_ticks": 10000
+        }
+      },
+      "cold_search": {
+        "status": "SAT",
+        "optimality_proven": false,
+        "search_mode": "route_domains",
+        "backend": "native",
+        "minimum_tracks": null,
+        "tracks_used": 7,
+        "semaphores_used": 0,
+        "lower_bound": 0,
+        "track_budget": 7,
+        "semaphore_budget": 0,
+        "simulation_steps": 20,
+        "reason": "solution_found",
+        "infeasibility_scope": "The immutable board, track budget and semaphore budget in this result.",
+        "statistics": {
+          "search_nodes": 519,
+          "simulations": 520,
+          "simulation_ticks": 1267,
+          "bound_checks": 520,
+          "bound_cache_hits": 355,
+          "pruned_by_bound": 0,
+          "pruned_by_failure": 86,
+          "rail_decisions": 405,
+          "rail_refinements": 27,
+          "signal_decisions": 0,
+          "maximum_depth": 8,
+          "incumbent_validations": 0,
+          "unresolved_simulations": 0,
+          "solutions_found": 1,
+          "heuristic_search_nodes": 519,
+          "heuristic_passes": 1,
+          "checkpoint_resumes": 518,
+          "reused_prefix_ticks": 6423,
+          "logical_simulation_ticks": 7690,
+          "full_replays": 1,
+          "native_cpu_seconds": 0.0,
+          "native_backend": true,
+          "incremental_simulation": true,
+          "witness_validations": 1,
+          "elapsed_seconds": 0.3187546000000001,
+          "complete_search": false,
+          "cpu_seconds": 0.03125,
+          "search_exhausted": false,
+          "time_limit_reached": false,
+          "node_limit_reached": false
+        },
+        "reference_free": true,
+        "difficulty_censored": false,
+        "limits": {
+          "timeout_seconds": 600,
+          "node_limit": null,
+          "max_ticks": 10000
+        }
+      }
+    }
+  }
+}

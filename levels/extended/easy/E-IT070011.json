@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "level_id": "E-IT070011",
+  "board": [
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      2,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      2,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      3
+    ]
+  ],
+  "mods": [
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      10,
+      0,
+      10
+    ],
+    [
+      0,
+      0,
+      0,
+      10
+    ],
+    [
+      0,
+      10,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "mod_nums": [
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "cars": [
+    {
+      "pos": [
+        3,
+        1
+      ],
+      "direction": "DOWN",
+      "num": 0,
+      "type": "NORMAL"
+    },
+    {
+      "pos": [
+        1,
+        1
+      ],
+      "direction": "UP",
+      "num": 1,
+      "type": "NORMAL"
+    },
+    {
+      "pos": [
+        1,
+        3
+      ],
+      "direction": "LEFT",
+      "num": 2,
+      "type": "NORMAL"
+    },
+    {
+      "pos": [
+        2,
+        3
+      ],
+      "direction": "LEFT",
+      "num": 3,
+      "type": "NORMAL"
+    }
+  ],
+  "tracks": 10,
+  "semaphores": 0,
+  "metadata": {
+    "mechanisms": [
+      "junctions"
+    ],
+    "locomotive_count": 1,
+    "total_car_count": 4,
+    "difficulty": "easy",
+    "available_tracks": 10,
+    "available_semaphores": 0,
+    "decoy_car_count": 0
+  }
+}

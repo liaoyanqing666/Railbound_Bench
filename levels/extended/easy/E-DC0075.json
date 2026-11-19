@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "level_id": "E-DC0075",
+  "board": [
+    [
+      0,
+      0,
+      0,
+      1,
+      1,
+      6,
+      0
+    ],
+    [
+      5,
+      1,
+      0,
+      5,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      10,
+      1,
+      11,
+      3
+    ],
+    [
+      0,
+      1,
+      1,
+      15,
+      1,
+      8,
+      0
+    ]
+  ],
+  "mods": [
+    [
+      0,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      10,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      3,
+      7,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "mod_nums": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "cars": [
+    {
+      "pos": [
+        1,
+        4
+      ],
+      "direction": "LEFT",
+      "num": 0,
+      "type": "DECOY"
+    },
+    {
+      "pos": [
+        0,
+        3
+      ],
+      "direction": "RIGHT",
+      "num": 0,
+      "type": "NORMAL"
+    }
+  ],
+  "tracks": 5,
+  "semaphores": 0,
+  "metadata": {
+    "mechanisms": [
+      "junctions",
+      "switches_and_gates",
+      "self_switching_junctions",
+      "decoy_cars"
+    ],
+    "locomotive_count": 1,
+    "total_car_count": 2,
+    "difficulty": "easy",
+    "available_tracks": 5,
+    "available_semaphores": 0,
+    "decoy_car_count": 1
+  }
+}

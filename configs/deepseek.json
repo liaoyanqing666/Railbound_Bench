@@ -1,0 +1,16 @@
+{
+  "provider": "deepseek",
+  "model_name": "DeepSeek-V4.1-Flash",
+  "api_model": "deepseek-flash",
+  "version_suffix": "",
+  "base_url": "https://api.deepseek.com",
+  "api_key_env": "DEEPSEEK_API",
+  "supports_images": true,
+  "timeout": 7200,
+  "stream": true,
+  "output_budget": "model_max",
+  "parameters": {
+    "thinking": {"type": "enabled"},
+    "reasoning_effort": "max"
+  }
+}

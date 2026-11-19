@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "level_id": "E-IT042022",
+  "board": [
+    [
+      1,
+      0,
+      0,
+      0,
+      19
+    ],
+    [
+      0,
+      0,
+      16,
+      0,
+      2
+    ],
+    [
+      1,
+      12,
+      10,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      15,
+      0,
+      0
+    ],
+    [
+      18,
+      0,
+      0,
+      0,
+      3
+    ]
+  ],
+  "mods": [
+    [
+      10,
+      0,
+      0,
+      0,
+      2
+    ],
+    [
+      0,
+      0,
+      7,
+      0,
+      10
+    ],
+    [
+      10,
+      7,
+      7,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      7,
+      0,
+      0
+    ],
+    [
+      2,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "mod_nums": [
+    [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "cars": [
+    {
+      "pos": [
+        2,
+        0
+      ],
+      "direction": "RIGHT",
+      "num": 0,
+      "type": "NORMAL"
+    },
+    {
+      "pos": [
+        0,
+        0
+      ],
+      "direction": "RIGHT",
+      "num": 1,
+      "type": "NORMAL"
+    },
+    {
+      "pos": [
+        1,
+        4
+      ],
+      "direction": "DOWN",
+      "num": 2,
+      "type": "NORMAL"
+    }
+  ],
+  "tracks": 10,
+  "semaphores": 0,
+  "metadata": {
+    "mechanisms": [
+      "junctions",
+      "tunnels",
+      "self_switching_junctions"
+    ],
+    "locomotive_count": 1,
+    "total_car_count": 3,
+    "difficulty": "medium",
+    "available_tracks": 10,
+    "available_semaphores": 0,
+    "decoy_car_count": 0
+  }
+}

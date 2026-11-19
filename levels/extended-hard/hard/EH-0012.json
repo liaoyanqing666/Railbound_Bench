@@ -1,0 +1,263 @@
+{
+  "schema_version": 1,
+  "level_id": "EH-0012",
+  "board": [
+    [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      14,
+      1,
+      0,
+      0,
+      0,
+      0,
+      2
+    ],
+    [
+      2,
+      29,
+      15,
+      0,
+      0,
+      0,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      11,
+      12,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      32,
+      0,
+      8
+    ]
+  ],
+  "mods": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      7,
+      10,
+      0,
+      0,
+      0,
+      0,
+      10
+    ],
+    [
+      6,
+      0,
+      7,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      7,
+      7,
+      10
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      10
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      10
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "mod_nums": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "cars": [
+    {
+      "pos": [
+        1,
+        1
+      ],
+      "direction": "RIGHT",
+      "num": 0,
+      "type": "NORMAL"
+    },
+    {
+      "pos": [
+        3,
+        6
+      ],
+      "direction": "DOWN",
+      "num": 0,
+      "type": "NUMERAL"
+    },
+    {
+      "pos": [
+        4,
+        6
+      ],
+      "direction": "DOWN",
+      "num": 1,
+      "type": "NORMAL"
+    },
+    {
+      "pos": [
+        1,
+        6
+      ],
+      "direction": "DOWN",
+      "num": 1,
+      "type": "NUMERAL"
+    },
+    {
+      "pos": [
+        5,
+        6
+      ],
+      "direction": "DOWN",
+      "num": 2,
+      "type": "NORMAL"
+    }
+  ],
+  "tracks": 18,
+  "semaphores": 1,
+  "metadata": {
+    "mechanisms": [
+      "junctions",
+      "self_switching_junctions",
+      "passenger_stations",
+      "semaphores",
+      "multiple_trains"
+    ],
+    "locomotive_count": 2,
+    "total_car_count": 5,
+    "difficulty": "hard",
+    "available_tracks": 18,
+    "available_semaphores": 1,
+    "decoy_car_count": 0
+  }
+}

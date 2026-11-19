@@ -1,0 +1,18 @@
+{
+  "provider": "openai_compatible",
+  "model_name": "MODEL_DISPLAY_NAME",
+  "api_model": "API_MODEL_ID",
+  "version_suffix": "",
+  "base_url": "https://api.openai.com/v1",
+  "api_key_env": "OPENAI_API_KEY",
+  "supports_images": true,
+  "output_budget": "model_max",
+  "model_limits": {
+    "api_model": "API_MODEL_ID",
+    "max_output_tokens": null,
+    "source": "REPLACE_WITH_SELECTED_MODEL_DOCUMENTATION_URL_AND_DATE"
+  },
+  "output_token_parameter": "max_completion_tokens",
+  "timeout": 7200,
+  "parameters": {}
+}

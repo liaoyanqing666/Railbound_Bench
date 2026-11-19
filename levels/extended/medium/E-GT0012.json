@@ -1,0 +1,209 @@
+{
+  "schema_version": 1,
+  "level_id": "E-GT0012",
+  "board": [
+    [
+      0,
+      0,
+      2,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      5,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      1,
+      3
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      2,
+      0,
+      0
+    ]
+  ],
+  "mods": [
+    [
+      0,
+      0,
+      10,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      3,
+      0,
+      0
+    ],
+    [
+      0,
+      10,
+      0,
+      10,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      10,
+      0,
+      0
+    ]
+  ],
+  "mod_nums": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "cars": [
+    {
+      "pos": [
+        0,
+        2
+      ],
+      "direction": "DOWN",
+      "num": 0,
+      "type": "NORMAL"
+    },
+    {
+      "pos": [
+        3,
+        3
+      ],
+      "direction": "LEFT",
+      "num": 1,
+      "type": "NORMAL"
+    },
+    {
+      "pos": [
+        6,
+        2
+      ],
+      "direction": "UP",
+      "num": 2,
+      "type": "NORMAL"
+    },
+    {
+      "pos": [
+        3,
+        1
+      ],
+      "direction": "LEFT",
+      "num": 3,
+      "type": "NORMAL"
+    }
+  ],
+  "tracks": 18,
+  "semaphores": 0,
+  "metadata": {
+    "mechanisms": [
+      "junctions",
+      "switches_and_gates"
+    ],
+    "locomotive_count": 1,
+    "total_car_count": 4,
+    "difficulty": "medium",
+    "available_tracks": 18,
+    "available_semaphores": 0,
+    "decoy_car_count": 0
+  }
+}

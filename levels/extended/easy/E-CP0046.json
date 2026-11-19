@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "level_id": "E-CP0046",
+  "board": [
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      3
+    ]
+  ],
+  "mods": [
+    [
+      10,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "mod_nums": [
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "cars": [
+    {
+      "pos": [
+        0,
+        0
+      ],
+      "direction": "RIGHT",
+      "num": 1,
+      "type": "NORMAL"
+    },
+    {
+      "pos": [
+        1,
+        0
+      ],
+      "direction": "RIGHT",
+      "num": 0,
+      "type": "NORMAL"
+    }
+  ],
+  "tracks": 4,
+  "semaphores": 0,
+  "metadata": {
+    "mechanisms": [
+      "junctions"
+    ],
+    "locomotive_count": 1,
+    "total_car_count": 2,
+    "difficulty": "easy",
+    "available_tracks": 4,
+    "available_semaphores": 0,
+    "decoy_car_count": 0
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "level_id": "E-SB0101",
+  "board": [
+    [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      2,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      1,
+      3
+    ]
+  ],
+  "mods": [
+    [
+      0,
+      0,
+      6,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      0,
+      0,
+      3,
+      0
+    ]
+  ],
+  "mod_nums": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "cars": [
+    {
+      "pos": [
+        2,
+        0
+      ],
+      "direction": "RIGHT",
+      "num": 0,
+      "type": "NORMAL"
+    }
+  ],
+  "tracks": 6,
+  "semaphores": 0,
+  "metadata": {
+    "mechanisms": [
+      "junctions",
+      "switches_and_gates",
+      "passenger_stations"
+    ],
+    "locomotive_count": 1,
+    "total_car_count": 1,
+    "difficulty": "easy",
+    "available_tracks": 6,
+    "available_semaphores": 0,
+    "decoy_car_count": 0
+  }
+}

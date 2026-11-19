@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "level_id": "E-OP0071",
+  "board": [
+    [
+      0,
+      0,
+      0,
+      2,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      2,
+      0
+    ]
+  ],
+  "mods": [
+    [
+      0,
+      0,
+      0,
+      10,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      10,
+      0
+    ]
+  ],
+  "mod_nums": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "cars": [
+    {
+      "pos": [
+        3,
+        4
+      ],
+      "direction": "UP",
+      "num": 0,
+      "type": "NORMAL"
+    },
+    {
+      "pos": [
+        0,
+        3
+      ],
+      "direction": "DOWN",
+      "num": 1,
+      "type": "NORMAL"
+    },
+    {
+      "pos": [
+        2,
+        0
+      ],
+      "direction": "RIGHT",
+      "num": 2,
+      "type": "NORMAL"
+    }
+  ],
+  "tracks": 6,
+  "semaphores": 0,
+  "metadata": {
+    "mechanisms": [
+      "junctions"
+    ],
+    "locomotive_count": 1,
+    "total_car_count": 3,
+    "difficulty": "easy",
+    "available_tracks": 6,
+    "available_semaphores": 0,
+    "decoy_car_count": 0
+  }
+}

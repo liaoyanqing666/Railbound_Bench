@@ -1,0 +1,226 @@
+{
+  "schema_version": 1,
+  "level_id": "E-DC0023",
+  "board": [
+    [
+      5,
+      6,
+      0,
+      2,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      7,
+      6,
+      0,
+      6,
+      0,
+      0
+    ],
+    [
+      10,
+      1,
+      8,
+      2,
+      7,
+      1,
+      0
+    ],
+    [
+      7,
+      6,
+      5,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      3
+    ]
+  ],
+  "mods": [
+    [
+      0,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      7,
+      10,
+      0,
+      1,
+      3,
+      10,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+    ]
+  ],
+  "mod_nums": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+    ]
+  ],
+  "cars": [
+    {
+      "pos": [
+        0,
+        3
+      ],
+      "direction": "DOWN",
+      "num": 0,
+      "type": "NORMAL"
+    },
+    {
+      "pos": [
+        2,
+        5
+      ],
+      "direction": "LEFT",
+      "num": 1,
+      "type": "NORMAL"
+    },
+    {
+      "pos": [
+        2,
+        1
+      ],
+      "direction": "RIGHT",
+      "num": 0,
+      "type": "DECOY"
+    },
+    {
+      "pos": [
+        4,
+        3
+      ],
+      "direction": "UP",
+      "num": 2,
+      "type": "NORMAL"
+    }
+  ],
+  "tracks": 5,
+  "semaphores": 0,
+  "metadata": {
+    "mechanisms": [
+      "junctions",
+      "switches_and_gates",
+      "self_switching_junctions",
+      "decoy_cars"
+    ],
+    "locomotive_count": 1,
+    "total_car_count": 4,
+    "difficulty": "easy",
+    "available_tracks": 5,
+    "available_semaphores": 0,
+    "decoy_car_count": 1
+  }
+}

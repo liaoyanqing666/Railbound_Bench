@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "level_id": "E-GT0025",
+  "board": [
+    [
+      1,
+      0,
+      0,
+      0,
+      19
+    ],
+    [
+      0,
+      0,
+      16,
+      0,
+      2
+    ],
+    [
+      1,
+      0,
+      10,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      15,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      8
+    ],
+    [
+      18,
+      1,
+      1,
+      1,
+      3
+    ]
+  ],
+  "mods": [
+    [
+      10,
+      0,
+      0,
+      0,
+      2
+    ],
+    [
+      0,
+      0,
+      7,
+      0,
+      10
+    ],
+    [
+      10,
+      0,
+      7,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      7,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      3
+    ],
+    [
+      2,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "mod_nums": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "cars": [
+    {
+      "pos": [
+        2,
+        0
+      ],
+      "direction": "RIGHT",
+      "num": 0,
+      "type": "NORMAL"
+    },
+    {
+      "pos": [
+        0,
+        0
+      ],
+      "direction": "RIGHT",
+      "num": 1,
+      "type": "NORMAL"
+    },
+    {
+      "pos": [
+        1,
+        4
+      ],
+      "direction": "DOWN",
+      "num": 2,
+      "type": "NORMAL"
+    }
+  ],
+  "tracks": 9,
+  "semaphores": 0,
+  "metadata": {
+    "mechanisms": [
+      "junctions",
+      "tunnels",
+      "switches_and_gates",
+      "self_switching_junctions"
+    ],
+    "locomotive_count": 1,
+    "total_car_count": 3,
+    "difficulty": "easy",
+    "available_tracks": 9,
+    "available_semaphores": 0,
+    "decoy_car_count": 0
+  }
+}

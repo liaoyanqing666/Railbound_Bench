@@ -1,0 +1,151 @@
+{
+  "add_tracks": [
+    [
+      0,
+      0,
+      5
+    ],
+    [
+      1,
+      1,
+      11
+    ],
+    [
+      2,
+      0,
+      2
+    ],
+    [
+      3,
+      1,
+      13
+    ],
+    [
+      3,
+      2,
+      15
+    ],
+    [
+      4,
+      0,
+      7
+    ],
+    [
+      4,
+      1,
+      1
+    ]
+  ],
+  "metadata": {
+    "simulation_steps": 21,
+    "solver": {
+      "optimization": {
+        "status": "OPTIMAL",
+        "optimality_proven": true,
+        "search_mode": "route_domains",
+        "backend": "native",
+        "minimum_tracks": 7,
+        "tracks_used": 7,
+        "semaphores_used": 0,
+        "lower_bound": 7,
+        "track_budget": 7,
+        "semaphore_budget": 0,
+        "simulation_steps": 21,
+        "reason": "search_exhausted",
+        "infeasibility_scope": "The immutable board, track budget and semaphore budget in this result.",
+        "statistics": {
+          "search_nodes": 2662,
+          "simulations": 2433,
+          "simulation_ticks": 17442,
+          "bound_checks": 2663,
+          "bound_cache_hits": 2640,
+          "pruned_by_bound": 231,
+          "pruned_by_failure": 1555,
+          "rail_decisions": 768,
+          "rail_refinements": 108,
+          "signal_decisions": 0,
+          "maximum_depth": 7,
+          "incumbent_validations": 1,
+          "unresolved_simulations": 0,
+          "solutions_found": 1,
+          "heuristic_search_nodes": 1943,
+          "heuristic_passes": 3,
+          "checkpoint_resumes": 1611,
+          "reused_prefix_ticks": 12827,
+          "logical_simulation_ticks": 30269,
+          "full_replays": 820,
+          "native_cpu_seconds": 0.03125,
+          "native_backend": true,
+          "incremental_simulation": true,
+          "witness_validations": 1,
+          "elapsed_seconds": 0.16474330000000137,
+          "complete_search": true,
+          "cpu_seconds": 0.046875,
+          "search_exhausted": true,
+          "time_limit_reached": false,
+          "node_limit_reached": false
+        },
+        "incumbent_supplied": true,
+        "limits": {
+          "timeout_seconds": 600,
+          "node_limit": null,
+          "max_ticks": 10000
+        }
+      },
+      "cold_search": {
+        "status": "SAT",
+        "optimality_proven": false,
+        "search_mode": "route_domains",
+        "backend": "native",
+        "minimum_tracks": null,
+        "tracks_used": 7,
+        "semaphores_used": 0,
+        "lower_bound": 0,
+        "track_budget": 7,
+        "semaphore_budget": 0,
+        "simulation_steps": 19,
+        "reason": "solution_found",
+        "infeasibility_scope": "The immutable board, track budget and semaphore budget in this result.",
+        "statistics": {
+          "search_nodes": 62,
+          "simulations": 63,
+          "simulation_ticks": 298,
+          "bound_checks": 63,
+          "bound_cache_hits": 49,
+          "pruned_by_bound": 0,
+          "pruned_by_failure": 48,
+          "rail_decisions": 12,
+          "rail_refinements": 1,
+          "signal_decisions": 0,
+          "maximum_depth": 7,
+          "incumbent_validations": 0,
+          "unresolved_simulations": 0,
+          "solutions_found": 1,
+          "heuristic_search_nodes": 62,
+          "heuristic_passes": 1,
+          "checkpoint_resumes": 32,
+          "reused_prefix_ticks": 193,
+          "logical_simulation_ticks": 491,
+          "full_replays": 30,
+          "native_cpu_seconds": 0.0,
+          "native_backend": true,
+          "incremental_simulation": true,
+          "witness_validations": 1,
+          "elapsed_seconds": 0.12970589999999937,
+          "complete_search": false,
+          "cpu_seconds": 0.015625,
+          "search_exhausted": false,
+          "time_limit_reached": false,
+          "node_limit_reached": false
+        },
+        "reference_free": true,
+        "difficulty_censored": false,
+        "limits": {
+          "timeout_seconds": 600,
+          "node_limit": null,
+          "max_ticks": 10000
+        }
+      }
+    }
+  }
+}

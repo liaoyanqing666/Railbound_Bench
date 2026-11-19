@@ -1,0 +1,39 @@
+# Credentials and login state
+.env
+.env.*
+.auth/
+
+# Python environments and build products
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.cache/
+build/
+dist/
+
+# Local run results and scratch work
+output/
+temp/
+
+# Paper sources (kept in Overleaf)
+docs/
+
+# Official puzzles are not redistributed
+levels/official/
+solutions/official/
+
+# Only the example model configs listed in the README are published
+configs/*
+!configs/openai_compatible.json
+!configs/deepseek.json
+!configs/aliyun_qwen35_35b_a3b.json
+!configs/claude_haiku_api.json
+
+# ChatGPT sign-in helper (kept locally, not published)
+models/openai_login.py
+
+# Editor and agent settings
+.vscode/
+AGENTS.md

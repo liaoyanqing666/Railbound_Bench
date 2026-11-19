@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "level_id": "E-SA0104",
+  "board": [
+    [
+      29,
+      1,
+      1,
+      9,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      2,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "mods": [
+    [
+      0,
+      3,
+      10,
+      7,
+      4,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "mod_nums": [
+    [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "cars": [
+    {
+      "pos": [
+        0,
+        2
+      ],
+      "direction": "RIGHT",
+      "type": "NORMAL",
+      "num": 0
+    }
+  ],
+  "tracks": 7,
+  "semaphores": 0,
+  "metadata": {
+    "mechanisms": [
+      "junctions",
+      "switches_and_gates",
+      "self_switching_junctions"
+    ],
+    "locomotive_count": 1,
+    "total_car_count": 1,
+    "difficulty": "easy",
+    "available_tracks": 7,
+    "available_semaphores": 0,
+    "decoy_car_count": 0
+  }
+}

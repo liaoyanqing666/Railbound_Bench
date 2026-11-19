@@ -1,0 +1,20 @@
+{
+  "provider": "aliyun",
+  "model_name": "Qwen3.5-35B-A3B",
+  "api_model": "qwen3.5-35b-a3b",
+  "version_suffix": "",
+  "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "api_key_env": "ALIYUN_API",
+  "supports_images": true,
+  "timeout": 7200.0,
+  "stream": true,
+  "output_budget": "model_max",
+  "model_limits": {
+    "api_model": "qwen3.5-35b-a3b",
+    "max_output_tokens": 65536,
+    "context_window": 262144,
+    "source": "https://help.aliyun.com/zh/model-studio/qwen3-5-35b-a3b"
+  },
+  "output_token_parameter": "max_tokens",
+  "parameters": {}
+}

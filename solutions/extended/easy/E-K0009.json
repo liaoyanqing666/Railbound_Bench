@@ -1,0 +1,151 @@
+{
+  "add_tracks": [
+    [
+      3,
+      1,
+      1
+    ],
+    [
+      3,
+      5,
+      8
+    ],
+    [
+      4,
+      0,
+      7
+    ],
+    [
+      4,
+      2,
+      16
+    ],
+    [
+      4,
+      4,
+      2
+    ],
+    [
+      5,
+      2,
+      7
+    ],
+    [
+      5,
+      4,
+      8
+    ]
+  ],
+  "metadata": {
+    "simulation_steps": 25,
+    "solver": {
+      "optimization": {
+        "status": "OPTIMAL",
+        "optimality_proven": true,
+        "search_mode": "route_domains",
+        "backend": "native",
+        "minimum_tracks": 7,
+        "tracks_used": 7,
+        "semaphores_used": 0,
+        "lower_bound": 7,
+        "track_budget": 7,
+        "semaphore_budget": 0,
+        "simulation_steps": 25,
+        "reason": "search_exhausted",
+        "infeasibility_scope": "The immutable board, track budget and semaphore budget in this result.",
+        "statistics": {
+          "search_nodes": 689,
+          "simulations": 401,
+          "simulation_ticks": 639,
+          "bound_checks": 690,
+          "bound_cache_hits": 606,
+          "pruned_by_bound": 290,
+          "pruned_by_failure": 40,
+          "rail_decisions": 344,
+          "rail_refinements": 15,
+          "signal_decisions": 0,
+          "maximum_depth": 7,
+          "incumbent_validations": 1,
+          "unresolved_simulations": 0,
+          "solutions_found": 1,
+          "heuristic_search_nodes": 511,
+          "heuristic_passes": 3,
+          "checkpoint_resumes": 395,
+          "reused_prefix_ticks": 2468,
+          "logical_simulation_ticks": 3107,
+          "full_replays": 4,
+          "native_cpu_seconds": 0.0,
+          "native_backend": true,
+          "incremental_simulation": true,
+          "witness_validations": 1,
+          "elapsed_seconds": 0.036131799999999714,
+          "complete_search": true,
+          "cpu_seconds": 0.046875,
+          "search_exhausted": true,
+          "time_limit_reached": false,
+          "node_limit_reached": false
+        },
+        "reference_free": false,
+        "limits": {
+          "timeout_seconds": 600,
+          "node_limit": null,
+          "max_ticks": 10000
+        }
+      },
+      "cold_search": {
+        "status": "SAT",
+        "optimality_proven": false,
+        "search_mode": "route_domains",
+        "backend": "native",
+        "minimum_tracks": null,
+        "tracks_used": 7,
+        "semaphores_used": 0,
+        "lower_bound": 2,
+        "track_budget": 7,
+        "semaphore_budget": 0,
+        "simulation_steps": 25,
+        "reason": "solution_found",
+        "infeasibility_scope": "The immutable board, track budget and semaphore budget in this result.",
+        "statistics": {
+          "search_nodes": 345,
+          "simulations": 236,
+          "simulation_ticks": 368,
+          "bound_checks": 346,
+          "bound_cache_hits": 219,
+          "pruned_by_bound": 110,
+          "pruned_by_failure": 30,
+          "rail_decisions": 185,
+          "rail_refinements": 19,
+          "signal_decisions": 0,
+          "maximum_depth": 7,
+          "incumbent_validations": 0,
+          "unresolved_simulations": 0,
+          "solutions_found": 1,
+          "heuristic_search_nodes": 345,
+          "heuristic_passes": 2,
+          "checkpoint_resumes": 233,
+          "reused_prefix_ticks": 1751,
+          "logical_simulation_ticks": 2119,
+          "full_replays": 2,
+          "native_cpu_seconds": 0.015625,
+          "native_backend": true,
+          "incremental_simulation": true,
+          "witness_validations": 1,
+          "elapsed_seconds": 0.19916809999999963,
+          "complete_search": false,
+          "cpu_seconds": 0.265625,
+          "search_exhausted": false,
+          "time_limit_reached": false,
+          "node_limit_reached": false
+        },
+        "reference_free": true,
+        "limits": {
+          "timeout_seconds": 600,
+          "node_limit": null,
+          "max_ticks": 10000
+        },
+        "difficulty_censored": false
+      }
+    }
+  }
+}

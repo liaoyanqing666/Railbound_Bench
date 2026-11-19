@@ -1,0 +1,186 @@
+{
+  "add_tracks": [
+    [
+      0,
+      1,
+      5
+    ],
+    [
+      0,
+      2,
+      9
+    ],
+    [
+      0,
+      3,
+      11
+    ],
+    [
+      1,
+      1,
+      2
+    ],
+    [
+      1,
+      2,
+      10
+    ],
+    [
+      1,
+      3,
+      8
+    ],
+    [
+      2,
+      1,
+      2
+    ],
+    [
+      2,
+      2,
+      2
+    ],
+    [
+      2,
+      3,
+      5
+    ],
+    [
+      3,
+      1,
+      2
+    ],
+    [
+      3,
+      3,
+      2
+    ],
+    [
+      4,
+      1,
+      8
+    ],
+    [
+      4,
+      2,
+      7
+    ],
+    [
+      4,
+      3,
+      8
+    ]
+  ],
+  "metadata": {
+    "simulation_steps": 16,
+    "solver": {
+      "optimization": {
+        "status": "OPTIMAL",
+        "optimality_proven": true,
+        "search_mode": "route_domains",
+        "backend": "native",
+        "minimum_tracks": 14,
+        "tracks_used": 14,
+        "semaphores_used": 0,
+        "lower_bound": 14,
+        "track_budget": 14,
+        "semaphore_budget": 0,
+        "simulation_steps": 16,
+        "reason": "search_exhausted",
+        "infeasibility_scope": "The immutable board, track budget and semaphore budget in this result.",
+        "statistics": {
+          "search_nodes": 22996,
+          "simulations": 18902,
+          "simulation_ticks": 13316,
+          "bound_checks": 22997,
+          "bound_cache_hits": 21944,
+          "pruned_by_bound": 4096,
+          "pruned_by_failure": 6968,
+          "rail_decisions": 9148,
+          "rail_refinements": 2784,
+          "signal_decisions": 0,
+          "maximum_depth": 14,
+          "incumbent_validations": 1,
+          "unresolved_simulations": 0,
+          "solutions_found": 1,
+          "heuristic_search_nodes": 17247,
+          "heuristic_passes": 3,
+          "checkpoint_resumes": 18896,
+          "reused_prefix_ticks": 101192,
+          "logical_simulation_ticks": 114508,
+          "full_replays": 4,
+          "native_cpu_seconds": 0.1875,
+          "native_backend": true,
+          "incremental_simulation": true,
+          "witness_validations": 1,
+          "elapsed_seconds": 0.26117299999999943,
+          "complete_search": true,
+          "cpu_seconds": 0.34375,
+          "search_exhausted": true,
+          "time_limit_reached": false,
+          "node_limit_reached": false
+        },
+        "reference_free": false,
+        "limits": {
+          "timeout_seconds": 600,
+          "node_limit": null,
+          "max_ticks": 10000
+        }
+      },
+      "cold_search": {
+        "status": "SAT",
+        "optimality_proven": false,
+        "search_mode": "route_domains",
+        "backend": "native",
+        "minimum_tracks": null,
+        "tracks_used": 14,
+        "semaphores_used": 0,
+        "lower_bound": 4,
+        "track_budget": 14,
+        "semaphore_budget": 0,
+        "simulation_steps": 16,
+        "reason": "solution_found",
+        "infeasibility_scope": "The immutable board, track budget and semaphore budget in this result.",
+        "statistics": {
+          "search_nodes": 3070,
+          "simulations": 2922,
+          "simulation_ticks": 2172,
+          "bound_checks": 3071,
+          "bound_cache_hits": 2601,
+          "pruned_by_bound": 149,
+          "pruned_by_failure": 1034,
+          "rail_decisions": 1313,
+          "rail_refinements": 573,
+          "signal_decisions": 0,
+          "maximum_depth": 14,
+          "incumbent_validations": 0,
+          "unresolved_simulations": 0,
+          "solutions_found": 1,
+          "heuristic_search_nodes": 3070,
+          "heuristic_passes": 1,
+          "checkpoint_resumes": 2920,
+          "reused_prefix_ticks": 18256,
+          "logical_simulation_ticks": 20428,
+          "full_replays": 1,
+          "native_cpu_seconds": 0.015625,
+          "native_backend": true,
+          "incremental_simulation": true,
+          "witness_validations": 1,
+          "elapsed_seconds": 0.2066463999999968,
+          "complete_search": false,
+          "cpu_seconds": 0.15625,
+          "search_exhausted": false,
+          "time_limit_reached": false,
+          "node_limit_reached": false
+        },
+        "reference_free": true,
+        "limits": {
+          "timeout_seconds": 600,
+          "node_limit": null,
+          "max_ticks": 10000
+        },
+        "difficulty_censored": false
+      }
+    }
+  }
+}

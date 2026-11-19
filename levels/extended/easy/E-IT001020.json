@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "level_id": "E-IT001020",
+  "board": [
+    [
+      18,
+      0,
+      0,
+      0,
+      3
+    ],
+    [
+      0,
+      0,
+      1,
+      2,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      18,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "mods": [
+    [
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      10,
+      6,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      10
+    ],
+    [
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      10
+    ]
+  ],
+  "mod_nums": [
+    [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "cars": [
+    {
+      "pos": [
+        2,
+        4
+      ],
+      "direction": "LEFT",
+      "num": 0,
+      "type": "NORMAL"
+    },
+    {
+      "pos": [
+        4,
+        4
+      ],
+      "direction": "LEFT",
+      "num": 1,
+      "type": "NORMAL"
+    },
+    {
+      "pos": [
+        1,
+        2
+      ],
+      "direction": "LEFT",
+      "num": 2,
+      "type": "NORMAL"
+    }
+  ],
+  "tracks": 8,
+  "semaphores": 0,
+  "metadata": {
+    "mechanisms": [
+      "junctions",
+      "tunnels",
+      "passenger_stations"
+    ],
+    "locomotive_count": 1,
+    "total_car_count": 3,
+    "difficulty": "easy",
+    "available_tracks": 8,
+    "available_semaphores": 0,
+    "decoy_car_count": 0
+  }
+}

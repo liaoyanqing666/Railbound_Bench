@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "level_id": "E-BF0027",
+  "board": [
+    [
+      2,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      3
+    ],
+    [
+      0,
+      2,
+      0
+    ]
+  ],
+  "mods": [
+    [
+      10,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      10,
+      0
+    ]
+  ],
+  "mod_nums": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "cars": [
+    {
+      "pos": [
+        0,
+        0
+      ],
+      "direction": "DOWN",
+      "num": 1,
+      "type": "NORMAL"
+    },
+    {
+      "pos": [
+        3,
+        1
+      ],
+      "direction": "UP",
+      "num": 0,
+      "type": "NORMAL"
+    }
+  ],
+  "tracks": 3,
+  "semaphores": 0,
+  "metadata": {
+    "mechanisms": [
+      "junctions"
+    ],
+    "locomotive_count": 1,
+    "total_car_count": 2,
+    "difficulty": "easy",
+    "available_tracks": 3,
+    "available_semaphores": 0,
+    "decoy_car_count": 0
+  }
+}
