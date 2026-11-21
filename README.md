@@ -6,7 +6,7 @@ Railbound-Bench is a benchmark for spatiotemporal planning and plan repair in mu
 
 Railbound-Bench 是一个评测多模态大模型时空规划与计划修复能力的 benchmark，受到 [Railbound](https://afterburn.games/railbound/) 游戏的启发。本 benchmark 参考了 Railbound 官方的 233 个谜题，制作了 200 个高难度谜题和 1000 个难度各异、与官方关卡分布相似的扩展谜题。每个谜题都有题目的文字和图像形式、参考解答的文字和图像形式。此外，我们还提供验证器（检查答案的程序）、布局求解器（基于规则的谜题求解器）、评测程序及部分辅助程序。模型直接从文本/图像中推断，而无需工具、代理或代码执行。
 
-Paper: *Seeing Is Not Planning: Spatiotemporal Planning and Plan Repair in Multimodal LLMs* (link to be added)
+Paper: [*Seeing Is Not Planning: Spatiotemporal Planning and Plan Repair in Multimodal LLMs*](https://www.researchgate.net/publication/418163282_Seeing_Is_Not_Planning_Spatiotemporal_Planning_and_Plan_Repair_in_Multimodal_LLMs)
 
 ---
 
@@ -26,7 +26,7 @@ The next figure plots, for Hard200, each model's estimated API cost of its first
 
 Each puzzle is a grid board with fixed rails, cars, engines and various mechanisms. The model adds track pieces (straight, curved or three-way) to empty cells, within the puzzle's track budget; some puzzles also allow signals. The model returns all additions at once, and the simulator then starts all cars together and checks whether the layout delivers every car to its engine in order. After a failure, the model receives feedback and submits a new complete layout, up to five times (the number can be changed with `--rounds` when evaluating).
 
-![Task overview](assets/task.svg)
+<p align="center"><img src="assets/task.svg" alt="Task overview"></p>
 
 ### Game rules
 
@@ -41,7 +41,7 @@ The puzzle succeeds when every required car has reached its engine in order. Bec
 
 The animation below runs the simple extended puzzle E-CT0022 with its reference answer. The first frame is the puzzle itself; the cars then advance step by step, and the orange rails are the ones the reference answer adds. The three cars share the junctions and gates in the middle, so they must take turns to reach the engine in the order 1, 2, 3.
 
-<p align="center"><img src="assets/example.gif" width="560" alt="E-CT0022 run example"></p>
+<p align="center"><img src="assets/example.gif" width="448" alt="E-CT0022 run example"></p>
 
 The figure shows extended puzzle E-TR1501 with its reference layout. Grey rails are given; orange rails are the 30 pieces added by the reference answer. Letters mark one example of each element. Numbers printed on the board belong to the game: a shared number links objects that work together, such as a car and its station, or a button and the gates it controls.
 
@@ -297,7 +297,13 @@ You do not need this section for ordinary use. It explains with examples how the
 If this project helps your work, please cite our paper:
 
 ```bibtex
-(citation to be added)
+@misc{li2026seeing,
+  title  = {Seeing Is Not Planning: Spatiotemporal Planning and Plan Repair in Multimodal LLMs},
+  author = {Li, Siyuan and Lin, Ethan and Li, Xiang and Liu, Tianming},
+  year   = {2026},
+  note   = {Preprint},
+  url    = {https://www.researchgate.net/publication/418163282_Seeing_Is_Not_Planning_Spatiotemporal_Planning_and_Plan_Repair_in_Multimodal_LLMs}
+}
 ```
 
 For questions about the code, please open an [issue](https://github.com/liaoyanqing666/Railbound_Bench/issues) or contact the author ([website](https://siyuanli.tech/) / [GitHub](https://github.com/liaoyanqing666)).

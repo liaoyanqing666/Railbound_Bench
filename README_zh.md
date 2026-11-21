@@ -4,7 +4,7 @@
 
 Railbound-Bench 是一个评测多模态大模型时空规划与计划修复能力的 benchmark，受到 [Railbound](https://afterburn.games/railbound/) 游戏的启发。本 benchmark 参考了 Railbound 官方的 233 个谜题，制作了 200 个高难度谜题和 1000 个难度各异、与官方关卡分布相似的扩展谜题。每个谜题都有题目的文字和图像形式、参考解答的文字和图像形式。此外，我们还提供验证器（检查答案的程序）、布局求解器（基于规则的谜题求解器）、评测程序及部分辅助程序。模型直接从文本/图像中推断，而无需工具、代理或代码执行。
 
-论文：*Seeing Is Not Planning: Spatiotemporal Planning and Plan Repair in Multimodal LLMs*
+论文：[*Seeing Is Not Planning: Spatiotemporal Planning and Plan Repair in Multimodal LLMs*](https://www.researchgate.net/publication/418163282_Seeing_Is_Not_Planning_Spatiotemporal_Planning_and_Plan_Repair_in_Multimodal_LLMs)
 
 ---
 
@@ -24,7 +24,7 @@ Railbound-Bench 是一个评测多模态大模型时空规划与计划修复能�
 
 每道题是一个网格棋盘，上面有固定轨道、车厢、车头和各种机关。模型要在空格上补铺轨道（直轨、弯轨或三岔轨），轨道数量不能超过题目给的额度，部分题目还可以放置信号灯。模型一次性返回全部新增轨道，模拟器随后让所有车厢同时出发，判断这个布局能不能把每节车厢按顺序送到车头。失败后，模型会收到反馈并重新提交一个完整布局，最多 5 次（次数可在评测时用 `--rounds` 修改）。
 
-![任务流程](assets/task.svg)
+<p align="center"><img src="assets/task.svg" alt="任务流程"></p>
 
 ### 游戏规则
 
@@ -39,7 +39,7 @@ Railbound-Bench 是一个评测多模态大模型时空规划与计划修复能�
 
 下面的动图是简单扩展题 E-CT0022 按参考解运行的过程。第一帧是题目本身，之后车厢一步一步前进，橙色轨道是参考解新增的。三节车厢共用中间的道岔和闸门，它们必须先后错开，才能按 1、2、3 的顺序到达车头。
 
-<p align="center"><img src="assets/example.gif" width="560" alt="E-CT0022 运行示例"></p>
+<p align="center"><img src="assets/example.gif" width="448" alt="E-CT0022 运行示例"></p>
 
 下图是扩展题 E-TR1501 及其参考解，灰色轨道是题目原有的，橙色轨道是参考解新增的 30 格。字母标出每种元素的一个例子；棋盘上印的数字属于游戏本身，相同数字表示相互关联的对象，例如车厢和它的站台、按钮和它控制的闸门。
 
@@ -295,7 +295,13 @@ python benchmark.py --summarize output/结果目录
 如果本项目对你有帮助，欢迎引用我们的论文：
 
 ```bibtex
-（引用信息待补充）
+@misc{li2026seeing,
+  title  = {Seeing Is Not Planning: Spatiotemporal Planning and Plan Repair in Multimodal LLMs},
+  author = {Li, Siyuan and Lin, Ethan and Li, Xiang and Liu, Tianming},
+  year   = {2026},
+  note   = {Preprint},
+  url    = {https://www.researchgate.net/publication/418163282_Seeing_Is_Not_Planning_Spatiotemporal_Planning_and_Plan_Repair_in_Multimodal_LLMs}
+}
 ```
 
 如有代码问题，欢迎提交 [Issue](https://github.com/liaoyanqing666/Railbound_Bench/issues)，或者联系作者（[个人网站](https://siyuanli.tech/) / [GitHub](https://github.com/liaoyanqing666)）。

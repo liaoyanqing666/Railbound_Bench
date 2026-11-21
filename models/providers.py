@@ -157,10 +157,8 @@ def materialize_messages(messages, supports_images=True, responses=False):
                     raise ValueError('Only text and local image parts are allowed')
         else:
             raise ValueError('Message content must be a string or text/image array')
+        # Earlier answers are replayed as their final text only; returned reasoning is never sent back.
         output = {'role': 'developer' if responses and role == 'system' else role, 'content': output_content}
-        # Preserve provider-returned reasoning in conversational memory when required.
-        if not responses and role == 'assistant' and message.get('reasoning_content') is not None:
-            output['reasoning_content'] = message['reasoning_content']
         result.append(output)
     return result
 

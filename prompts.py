@@ -56,7 +56,7 @@ BASE_RULES = (
     'Reach the matching locomotive in number order, starting with num 0. Delivery removes that car at the end of its move, '
     'with no extra global coupling pause; other cars continue. Two cars occupying the same cell, exchanging adjacent cells '
     'head-on, or entering invalid/missing rail crash. Following a moving car into its vacated cell is allowed. '
-    'Numbered delivery order is independent for each car type. '
+    'Numbered delivery order is global for each car type across all of its matching locomotives. '
     'All required cars must be delivered. Entering a loop fails.'
 )
 
@@ -74,8 +74,8 @@ def _visual_encoding(level, active):
         '(LEFT, RIGHT, UP, DOWN). Blue passenger cars use Arabic labels 1, 2, ... and type NORMAL; '
         'their num is the visible label minus 1. A blue locomotive has a cab, boiler and chimney, '
         'and its board code passenger_end_DIRECTION uses its arrow direction. '
-        'A locomotive is a board tile, never an entry in cars. Every car starts on an ordinary straight rail '
-        'with modifier 10 and no mechanism in that cell. '
+        'A locomotive is a board tile, never an entry in cars. A car may share its starting cell with a drawn mechanism. '
+        'Modifier 10 marks a plain car start; it does not replace a mechanism shown in that cell. '
         'The rail visible around the vehicle still determines that cell\'s board code.'
     ]
     if any(car['type']=='NUMERAL' for car in level['cars']):
@@ -133,7 +133,7 @@ def _text_board(level):
     starts = [[y, x] for y, row in enumerate(level['mods']) for x, mod in enumerate(row) if mod == 10]
     parts.append('Mechanisms, listed by position: ' + json.dumps(modifiers, separators=(',', ':')) +
                  '\ncar_start markers (modifier 10): ' + json.dumps(starts, separators=(',', ':')) +
-                 '. All remaining unlisted cells have modifier 0. Every initial car occupies a car_start cell. '
+                 '. All remaining unlisted cells have modifier 0. Initial cars retain the listed modifier at their cell. '
                  'Unnumbered modifiers use ID 0.')
     parts.append('Initial cars:\n' + json.dumps(level['cars'], separators=(',', ':')))
     return '\n\n'.join(parts)
@@ -158,6 +158,29 @@ def _movement_rules(level):
     if any(mod in (5, 7) for row in level['mods'] for mod in row):
         parts.append('A switching event replaces a junction code using ' + json.dumps(SWAPPED, separators=(',', ':')) + '.')
     return '\n\n'.join(parts)
+
+
+def _starting_rules(level):
+    """Explain only the initial-placement exceptions present in this board."""
+    starting = [(car, level['mods'][car['pos'][0]][car['pos'][1]],
+                 level['mod_nums'][car['pos'][0]][car['pos'][1]]) for car in level['cars']]
+    parts = []
+    controls = {mod for car, mod, number in starting} & {1, 7}
+    if controls:
+        names = ['button' if mod == 1 else 'automatic junction' for mod in sorted(controls)]
+        parts.append('Initial placement: a car starting on a ' + ' or '.join(names) +
+                     ' activates it once before the first move. Its supplied outgoing heading is retained. '
+                     'Waiting there does not activate it again; a later entry can.')
+    if any((mod == 6 and car['type'] == 'NORMAL' or mod == 11 and car['type'] == 'NUMERAL')
+           and number == car['num'] for car, mod, number in starting):
+        parts.append('Service requires a later movement entry into a matching stop. '
+                     'Initially standing or waiting on its assigned stop does not serve it: '
+                     'the car must leave and return before delivery.')
+    if (level['semaphores'] or any(8 in row for row in level['mods'])) and any(
+            level['board'][car['pos'][0]][car['pos'][1]] in range(9, 17) for car in level['cars']):
+        parts.append('Initial occupancy of a qualifying connected junction also counts as a passage '
+                     'for semaphore release before the first move.')
+    return '\n'.join(parts)
 
 
 def _answer_requirements(level):
@@ -224,6 +247,9 @@ def initial_prompt(level, mode='image_rules'):
     if mode != 'image_no_rules':
         parts.append(_movement_rules(level))
         parts.extend(RULES[name] for name in active)
+        starting_rules = _starting_rules(level)
+        if starting_rules:
+            parts.append(starting_rules)
     else:
         parts.append('Mechanism transition rules and waiting durations are not supplied. '
                      'Use the shared goal, visual symbols, output format and observed execution feedback.')
@@ -275,13 +301,13 @@ def feedback_prompt(result, mode='visual', *, prompt_mode='image_rules'):
         else:
             details = result.get('message', 'The solution exceeds its resource budget.')
         return 'Failure: ' + result['error_type'] + '. ' + details + ' Submit another complete additions JSON.'
-    if mode == 'binary':
-        return 'The solution failed. Please submit another complete answer.'
     diagnostic = 'Failure: ' + str(result.get('error_type')) + '.'
     if result.get('error_positions'):
         diagnostic += ' Affected [row,column] cells: ' + json.dumps(result['error_positions']) + '.'
     if not result.get('trace'):
         return diagnostic + ' ' + result.get('message', '') + '\nSubmit another complete additions JSON.'
+    if mode == 'binary':
+        return 'The solution failed. Please submit another complete answer.'
     states = result.get('feedback_states') or []
     if mode == 'visual' and states:
         text = diagnostic + ' The attached feedback images are in chronological order at ticks ' + str([s.get('tick') for s in states]) + '. '
