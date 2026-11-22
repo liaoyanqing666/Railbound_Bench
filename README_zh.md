@@ -6,6 +6,8 @@ Railbound-Bench 是一个评测多模态大模型时空规划与计划修复能�
 
 论文：[*Seeing Is Not Planning: Spatiotemporal Planning and Plan Repair in Multimodal LLMs*](https://www.researchgate.net/publication/418163282_Seeing_Is_Not_Planning_Spatiotemporal_Planning_and_Plan_Repair_in_Multimodal_LLMs)
 
+Hugging Face 数据集：[liaoyanqing666/Railbound-Bench](https://huggingface.co/datasets/liaoyanqing666/Railbound-Bench) · 排行榜与在线判卷：[Hugging Face Space](https://huggingface.co/spaces/liaoyanqing666/Railbound-Bench)
+
 ---
 
 ## 主要结果
